@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+.blockquote {
+  background-color: #e5e7eb;
+  font-size: 36px;
+  font-style: italic;
+  font-weight: light;
+  box-sizing: border-box;
+  color:#1f2937;
+}
+.blockquote--bordered {
+    border-left-width: 10px;
+}
+.blockquote--quoted::before {
+  content:"\201c";
+  display: block;
+  margin-bottom: -40px;
+  margin-top: -20px;
+}
+.blockquote--text {
+  font-family: 'Roboto', sans-serif;
+}
+.blockquote--text:not(:last-child){
+    margin-bottom: 1em;
+}
+.blockquote--text--credit {
+  font-weight: bold;
+  font-style: normal;
+  text-align: right;
+}
+.blockquote--text--credit::before{
+  content: "\2014\0020";  
+}
